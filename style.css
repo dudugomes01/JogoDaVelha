@@ -126,3 +126,24 @@ body{
     color: white;
     font-size: 5rem;
 }
+
+
+/* Footer */
+footer {
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgb(135 135 135 / 33%);
+    background-color: #000;
+  }
+  
+  
+  .text-footer {
+    text-align: center;
+    font-size: 1.4rem;
+    color: rgb(163, 163, 163);
+  }
+  .text-footer strong {
+    font-weight: 500;
+  }

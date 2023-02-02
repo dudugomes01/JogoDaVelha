@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="board circle">
-        <div class="cell x" data-cell></div> 
-        <div class="cell circle" data-cell></div>
+    <div class="board" data-board>
+        <div class="cell" data-cell></div> 
+        <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -24,7 +24,12 @@
         <button class="winning-message-button">Reiniciar!</button>
     </div>
 
-
+    <footer>
+        <p class="text-footer">
+            Copyright © <script>document.write(new Date().getFullYear());</script> | @devcarloseduardo•<br>
+                <a href="https://caed.netlify.app/" target="_blank"></a> 
+        </p>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>

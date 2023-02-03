@@ -127,6 +127,9 @@ body{
     font-size: 5rem;
 }
 
+.show-winneing-message{
+    display: flex;
+}
 
 /* Footer */
 footer {

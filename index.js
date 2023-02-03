@@ -1,6 +1,8 @@
 // const cellElements = document.querySelectorAll("[data-cel]")
 const cellElements = document.querySelectorAll(".cell")
 const board = document.querySelector(".board")
+const winningTxt = document.querySelector(".winning-message-txt")
+const winningMessage = document.querySelector(".winning-message")
 
 let isCircleTuner;
 
@@ -23,6 +25,18 @@ const startGame = () =>{
     isCircleTuner = false
 
     board.classList.add("x")
+}
+
+const endGame = (isDraw) =>{
+    if(isDraw){
+        winningTxt.innerText = 'Empate!'
+    }else{
+        winningTxt.innerText = isCircleTuner 
+        ? "Círculo Venceu!" 
+        : "X venceu"
+    }
+    winningMessage.classList.add("show-winneing-message")
+ 
 }
  
 const checkForWin = (currentPlayer) =>{
@@ -59,7 +73,7 @@ const handleClick = (e) =>{
     // Verificar por vitoria
     const isWin = checkForWin(classToAdd)
     if(isWin){
-        alert("deu bom")
+       endGame(false)
     }
     // Empate
     // mudar simbolo
